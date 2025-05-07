@@ -29,6 +29,26 @@
    ├── requirements.txt                 # List of Python dependencies
    ```
 
+
+## 🌐 Digital Peer Review Pipeline
+```mermaid
+graph LR
+A[Raw PDF] --> B{AI Gatekeeper}
+B -->|Publishable| C[Conference Matchmaker]
+B -->|Reject| D[Archive]
+C --> E[CVPR?]
+C --> F[EMNLP?]
+C --> G[KDD?]
+C --> H[NeurIPS?]
+C --> I[TMLR?]
+E --> J[Rationale Report]
+F --> J
+G --> J
+H --> J
+I --> J
+```
+
+
 ## 🚀 Quick Start
 1. **Prepare Environment**:
    ```bash
